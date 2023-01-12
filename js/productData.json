@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Cool Pants ",
+        "ID": "product1",
+        "price": 1000,
+        "discountPrice": 500,
+        "rating": 3,
+        "new": true,
+        "image": "img/product1.png",
+        "hover": 1
+    },
+    {
+        "name": "Loral Top",
+        "ID": "product2",
+        "price": 400,
+        "discountPrice": 350,
+        "rating": 4,
+        "new": false,
+        "image": "img/product2.png",
+        "hover": 2
+    },
+    {
+        "name": "Cream Top",
+        "ID": "product3",
+        "price": 5000,
+        "discountPrice": 2000,
+        "rating": 2,
+        "new": false,
+        "image": "img/product3.png",
+        "hover": 3
+    },
+    {
+        "name": "Dummy man",
+        "ID": "product4",
+        "price": 600,
+        "discountPrice": 500,
+        "rating": 3,
+        "new": true,
+        "image": "img/product4.png",
+        "hover": 4
+    },
+    {
+        "name": "LOUIIS pants",
+        "ID": "product5",
+        "price": 3000,
+        "discountPrice": 2000,
+        "rating": 1,
+        "new": false,
+        "image": "img/product5.png",
+        "hover": 5
+    },
+    {
+        "name": "Lawman Silver Coat",
+        "ID": "product6",
+        "price": 5000,
+        "discountPrice": 2000,
+        "rating": 5,
+        "new": true,
+        "image": "img/product6.png",
+        "hover": 6
+    },
+    {
+        "name": "Green Pullover",
+        "ID": "product7",
+        "price": 700,
+        "discountPrice": 300,
+        "rating": 5,
+        "new": true,
+        "image": "img/product2.png",
+        "hover": 7
+    },
+    {
+        "name": "Dazing Pant",
+        "ID": "product8",
+        "price": 900,
+        "discountPrice": 500,
+        "rating": 4,
+        "new": false,
+        "image": "img/product1.png",
+        "hover": 8
+    },
+    {
+        "name": "Loral Pullover",
+        "ID": "product9",
+        "price": 3000,
+        "discountPrice": 1500,
+        "rating": 4,
+        "new": true,
+        "image": "img/product3.png",
+        "hover": 9
+    },
+    {
+        "name": "Aweson Wear",
+        "ID": "product10",
+        "price": 700,
+        "discountPrice": 650,
+        "rating": 1,
+        "new": false,
+        "image": "img/product4.png",
+        "hover": 10
+    },
+    {
+        "name": "Mens Coat",
+        "ID": "product11",
+        "price": 4000,
+        "discountPrice": 2500,
+        "rating": 3,
+        "new": false,
+        "image": "img/product6.png",
+        "hover": 11
+    },
+    {
+        "name": "Chinos",
+        "ID": "product12",
+        "price": 2000,
+        "discountPrice": 999,
+        "rating": 4,
+        "new": true,
+        "image": "img/product5.png",
+        "hover": 12
+    }
+]
