@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SellerPage</title>
+
+    <!-- flavicon link -->
+    <link rel="icon" type="image/png" href="img/flavicon.png">
+
+    <!-- CSS styling file link -->
+    <link rel="stylesheet" href="Style_sellerpage.css">
+
+    <!--files links of other times -->
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="top" name="top" class="orangeDiv" align='center'>
+
+
+        <!-- First Navigation  Bar Starts -->
+
+        <div class="container">
+            <div class="row">
+                <!-- this row has social media logos, search bar for latest products and brands, contact number, app link and language setting -->
+
+
+                <div class="col" style="width: 10px;"> <a href="#"> <img style="height: 35px;"
+                            src="img/facebook round.png" alt="facebook">
+                        <a href="#"> <img style="height: 35px;" src="img/youtube.png" alt="Youtube"> </a>
+                        <a href="#"> <img style="height: 35px;" src="img/twitter round.png" alt="Twitter">
+                        </a>
+                    </a></div>
+                <div class="col"> <input class="btn" type="search" name="search" id="search"
+                        placeholder="  Search Products & Brands" size="40"
+                        style="border: 0px;height: 30px;border-radius: 25px;">
+                    <a href="#"> <img style="margin-left: 90%; margin-top: -15%;" src="img/Path 12337.png"
+                            alt="search"></a></div>
+
+                <div class="col">
+                    <a href="#"><img style="height: 30px;" src="img/Path 12336.png" alt="contactus"></a><a href="#"
+                       id="contactno" style="color: white;">+919838203708</a>
+                </div>
+                <div class="col"><a href="#" style="color: white;">Sell On <br> Company</a></div>
+                <div class="col"><a href="#" style="color: white;">Download <br> App</a></div>
+
+                <div class="col">
+                    <img id="pr" style="height: 25px; width: 25px;" src="img/india.png" alt="Country">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false"
+                            style="background-color: orangered; border: hidden; color: white; text-decoration: none;">
+                            Country
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a onclick="btn()" class="dropdown-item" href="#">India</a>
+                            <a onclick="btn1()" class="dropdown-item" href="#">USA</a>
+                            <a onclick="btn2()" class="dropdown-item" href="#">UAE</a>
+                            <a onclick="btn3()" class="dropdown-item" href="#">CANADA</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- First Navigation  Bar ended -->
+
+
+    </div>
+    <br>
+
+    <div class="pages" id="pages" style="background-color: white;">
+        <!-- Second Navigation  Bar Starts -->
+
+            <!-- In this row we have logo of our website, different categories and sign in option for users -->
+
+        <div class="container">
+            <br>
+            <div class="row">
+                <div class="col"><img src="img/logo.png" style="margin-top: -20px;">
+                </div>
+                <div class="col"><a href="#">Home</a></div>
+                <div class="col">
+                    <div class="dropdown1" style="margin-top: -5px;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false"
+                            style=" border: hidden; background-color: white; ">
+                            Categories
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Menu One</a>
+                            <a class="dropdown-item" href="#">Menu Two</a>
+                            <a class="dropdown-item" href="#">Menu Three</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"><a href="#">Latest</a></div>
+                <div class="col"><a href="#">Blog</a></div>
+                <div class="col"><a href="#">Pages</a></div>
+                <div class="col"><a href="#">Contact</a></div>
+                <div class="col"> <a href="Sign in.html"><button class="btn">
+                            <strong style="color: white;">SIGN IN</strong>
+                        </button></a></div>
+
+            </div>
+        </div>
+        <!-- Second Navigation  Bar ended -->
+
+    </div>
+    <br>
+
+    <!-- registeration area starts  -->
+    <div class="register" id="register">
+
+        <!-- this is registration area where users can register for more facilities -->
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6 col-md-12 offensive-md-6 heroimg">
+                    <div class="row Untitled">
+                        <img width="38%" src="img/Untitled-2.png" alt="Untitled">
+                        <h4 class="fluid">Register in <br>less than <br>10 minutes!</h4> 
+                        <!-- here we use different font style taken from google fonts -->
+
+                    </div>
+                    <div class="row Untitled1" align='center'>
+                        <div class="col">
+                            <a href="#"><img src="img/Image 165.png" alt="">
+                            </a><br><br>
+                            <h>Sell 24*7 across <br> 3000 cities and towns</h>
+
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="img/Image 166.png" alt="">
+                            </a><br><br>
+                            <h>Millions of users and <br> 3,00,000 sellers <br> across India</h>
+                        </div>
+                        <div class="col">
+                            <a href="#"><img src="img/Image 167.png" alt="">
+                            </a><br><br>
+                            <h>Quick payments and <br> transparent process</h>
+                        </div>
+
+                    </div>
+                    <br><br>
+                </div>
+
+
+                <div class="col-lg-6 col-md-12 offensive-md-6 Untitled2">
+                    <!-- here we use form in card for user registration -->
+
+                    <div class="card">
+                        <div class="card-body">
+                            <form action="">
+
+                                <div class="maintitle">
+                                    <h5>REGISTER TODAY</h5>
+                                </div>
+                                <br><br>
+                                <div class="title float-left">Email <strong style="color: red;">*</strong></div><br>
+                                <div class="input-group input-group-sm mb-3">
+
+                                    <input type="email" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+
+                                <div class="title float-left">Mobile No. <strong style="color: red;">*</strong></div>
+                                <br>
+                                <div class="input-group input-group-sm mb-3">
+
+                                    <input type="email" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+                                <br><br>
+
+
+                                <div class="title float-left">Categories of Products<strong
+                                        style="color: red;">*</strong></div>
+                                <select class="form-control" id="exampleFormControlSelect1" style="width: 50%;">
+                                    <option value="nothing"> Nothing Selected</option>
+                                    <option>Mens</option>
+                                    <option>Womens</option>
+                                    <option>Latest Fashion</option>
+
+                                </select>
+                                <br>
+
+                                <div class="title float-left">Password <strong style="color: red;">*</strong></div>
+                                <br>
+                                <div class="input-group input-group-sm mb-3">
+
+                                    <input type="password" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+
+
+                                <div class="title float-left">Confirm Password <strong style="color: red;">*</strong>
+                                </div>
+                                <br>
+                                <div class="input-group input-group-sm mb-3">
+
+                                    <input type="password" class="form-control" aria-label="Sizing example input"
+                                        aria-describedby="inputGroup-sizing-sm" required>
+                                </div>
+
+                                <div class="submit" align="center">
+                                    <input class="btn" type="submit" value="SUBMIT">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="R" align='center'>
+                        <h>OR</h>
+                    </div>
+                    <br>
+                    <div class="callus">
+                        <a href="#" class="btn ">CALL US ON +91 9969874504 <br> BETWEEN 11AM-8PM(IST) </a><br>
+                        <br>
+                        <a href="#" class="btn">EMAIL US ON SELL@LORELpIPSUM.COM</a>
+                    </div>
+                    <br><br><br>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br>
+
+
+    <!-- registeration area ends  -->
+
+    <!-- succeed with dummy text area starts -->
+    <div class="succeedtext" id="succeedtext">
+        <div class="container">
+            <div class="row Untitled3">
+                <div class="col" align='center'>
+                    <h2>SUCCEED WITH DUMMY TEXT</h2>
+
+                </div>
+            </div>
+            <br><br><br>
+            <div class="row Untitled4 " align='center'>
+                <div class="col-lg-4 col-md-12">
+                    <br>
+                    <img src="img/Image 162.png" alt=""><br><br>
+                    <h>Loreu Ipsum Trade Alert - Delivering the latest <br> product trends and industry news straight
+                        your <br> inbox. Well never share your email address with a third party</h><br><br>
+                    <h><b>John Philipse</b></h>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <br>
+                    <img src="img/Image 164.png" alt=""><br><br>
+                    <h>Loreu Ipsum Trade Alert - Delivering the latest <br> product trends and industry news straight
+                        your <br> inbox. Well never share your email address with a third party</h><br><br>
+                    <h><b>John Philipse</b></h>
+
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <br>
+                    <img src="img/Image 161.png" alt=""><br><br>
+                    <h>Loreu Ipsum Trade Alert - Delivering the latest <br> product trends and industry news straight
+                        your <br> inbox. Well never share your email address with a third party</h><br><br>
+                    <h><b>John Philipse</b></h>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- succeed with dummy text area ends -->
+    <br><br><br><br><br><br><br><br>
+
+    <div id="payment">
+
+        <!-- Here cards of payments options with details started -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 34.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/100_ Secure payments.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 35.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Trustpay.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 37.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Shop on the go.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 36.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Help center.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+        </div>
+        <!-- Here cards of payments options with details ended -->
+
+
+    </div>
+
+
+    <!-- Here privacy policy options started -->
+
+    <div class="moreinfo">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/POLICY INFOPrivacy PolicyTerms of SaleTerms of UseReport Abuse _ Takedown Policy.png"
+                        alt="policy info">
+                </div>
+                <div class="col">
+                    <img src="img/COMPANYAbout UsCore ValuesCareersBlogSitemap.png" alt="company">
+
+                </div>
+                <div class="col">
+                    <img src="img/SNAPDEAL BUSINESSShopping AppSell on SnapdealAdvertise on SnapdealMedia EnquiriesBe an Affiliate.png"
+                        alt="SnapdealAdvertise">
+                </div>
+                <div class="col">
+                    <img src="img/NEED HELP FAQContact UsOnline Shopping.png" alt="need help">
+                </div>
+                <div class="col">
+                    <img src="img/SUBSCRIBE.png" alt="SUBSCRIBE"><br><br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="  Your Email Address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                style="background-color: black; color: white;">Subscribe</button>
+                        </div>
+                    </div>
+                    <img src="img/Register now to get updates on promotions          and coupons. Or Download App.png"
+                        alt="Register">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col ">
+                    <hr>
+                    <a class="scrollUp" id="scrollUp"> <img align="right" src="img/Group 2600.png" alt="at top"></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Here privacy policy options ended -->
+
+
+    <div class="paymentandconnect">
+        <!-- Here payment and connect methods started -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <img height="30" width="120" src="img/payment.png" alt="payment2">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="img/Image 38.png" alt="image38">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 39.png" alt="image39">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 40.png" alt="image40">
+
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 42.png" alt="image42">
+
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 43.png" alt="image43">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="row">
+                        <img height="30" width="120" style="margin-left: -5%;" src="img/CONNECT.png" alt="CONNECT">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="img/Image 44.png" alt="image44">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 45.png" alt="image45">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 46.png" alt="image46">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 47.png" alt="image47">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Here payment and connect methods ended -->
+
+    </div>
+    <br><br><br>
+
+
+    <script>
+        // this is javascript foe adding behavior to our webpage
+
+        // this is for changing flag and contact info according to contry
+
+        function btn() {// aldready declared this function 'btn()' in country dropdown option in onclick 
+            var pr = document.getElementById('pr');//declearing a variable for countries
+            var contactno = document.getElementById('contactno');//declearing a variable for countries
+
+
+            var images = ['img/uae.png', 'img/usa.png', 'img/india.png', 'img/canada.png'];//array for images of all countries
+            pr.src = images[2];//for displaying indian flag for india
+
+            contactno.innerHTML = "+911234567890";//contact no for india
+
+        }
+
+        function btn1() {// aldready declared this function 'btn1()' in country dropdown option in onclick 
+            var pr = document.getElementById('pr');//declearing a variable for countries
+            var contactno = document.getElementById('contactno');//declearing a variable for countries
+
+            var images = ['img/uae.png', 'img/usa.png', 'img/india.png', 'img/canada.png'];//array for images of all countries
+
+            pr.src = images[1];
+            contactno.innerHTML = "+19876543210";//contact no for USA
+
+        }
+
+        function btn2() {// aldready declared this function 'btn2()' in country dropdown option in onclick 
+            var pr = document.getElementById('pr');//declearing a variable for countries
+            var contactno = document.getElementById('contactno');//declearing a variable for countries
+
+            var images = ['img/uae.png', 'img/usa.png', 'img/india.png', 'img/canada.png'];//array for images of all countries
+
+            pr.src = images[0];
+            contactno.innerHTML = " +9715555555555";//contact no for UAE
+
+        }
+
+        function btn3() {// aldready declared this function 'btn3()' in country dropdown option in onclick 
+            var pr = document.getElementById('pr');//declearing a variable for countries
+            var contactno = document.getElementById('contactno');//declearing a variable for countries
+
+            var images = ['img/uae.png', 'img/usa.png', 'img/india.png', 'img/canada.png'];//array for images of all countries
+
+            pr.src = images[3];
+            contactno.innerHTML = " +15555555555";//contact no for CANADA
+
+        }
+
+        // below is for making navbbar sticy and button which take to top
+        window.addEventListener("scroll", function () {
+
+            var navbar = document.getElementById("pages");//declearing variable for navbbar
+            var top = window.pageYOffset || document.documentElement.scrollTop;
+            var attop = document.getElementById("scrollUp");//declearing variable for scrolltotop button
+
+            scrolled = () => {     //function for scrolling at top
+                window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            }
+
+            if (window.pageYOffset >= 180) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+
+            if (window.pageYOffset >= 500) {
+             
+                attop.addEventListener('click', scrolled);
+            }
+            else{
+               
+                attop.removeEventListener("click", scrolled);
+            }
+        })
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="icon" type="image/png" href="img/flavicon.png">
+
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+    <style>
+        /* these sre the styles for the singin page */
+
+        .socialmedia a {
+            height: 50px;
+            width: 100px;
+            border-radius: 10px;
+        }
+
+
+
+        .nav button {
+            background-color: white;
+            color: orangered;
+        }
+
+        .nav button:hover {
+            background-color: gray;
+            color: black;
+        }
+
+        .nav-link {
+            width: 180px;
+        }
+
+        .card {
+            -webkit-box-shadow: 0px 21px 13px #666666;
+            -moz-box-shadow: 0px 21px 13px #666666;
+            box-shadow: 0px 21px 13px #666666;
+        }
+
+        .submit a {
+            text-decoration: none;
+            background-color: white;
+            color: gray;
+            border: 0.5px solid orangered;
+            width: 100%;
+
+        }
+
+        .submit a:hover {
+            color: white;
+            background-color: gray;
+        }
+
+        .submit input {
+            background-color: orangered;
+            color: white;
+            width: 100%;
+        }
+
+        .submit input:hover {
+            background-color: orange;
+
+        }
+
+        .submit1 input {
+            background-color: orangered;
+            color: white;
+            width: 100%;
+        }
+
+        .submit1 input:hover {
+            background-color: orange;
+
+        }
+
+        .fa {
+            font-size: large;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col" align='center'>
+                <br>
+                <img src="img/logo.png" alt="">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" align='center'>
+
+                <!-- here card area starts for sing in and create new account -->
+                <div class="card" style="width: fit-content;">
+                    <div class="card-body">
+
+
+
+                        <!-- this is nav tabs for showing  different options of sign in and new account in card-body -->
+                        <div class="nav nav-tabs justify-content-center row" id="nav-tab" role="tablist">
+
+
+
+                            <button class="nav-item nav-link " id="nav-signin-tab" data-toggle="tab" href="#nav-signin"
+                                role="tab" aria-controls="nav-signin" aria-selected="true"><strong>SIGN
+                                    IN</strong></button>
+
+                            <button class="nav-item nav-link" id="nav-newaccount-tab" data-toggle="tab"
+                                href="#nav-newaccount" role="tab" aria-controls="nav-newaccount"
+                                aria-selected="true"><strong>CREATE ACCOUNT</strong></button>
+
+
+
+                        </div>
+
+                        <!-- this is nav content for showing  different options of sign in and new account in card-body -->
+
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- card one -->
+                            <!-- this is for sign in tab -->
+                            <div class="tab-pane fade show active" id="nav-signin" role="tabpanel"
+                                aria-labelledby="nav-signin-tab">
+                                <br>
+                                <form action="">
+                                    <div class="title float-left">Email <strong style="color: red;">*</strong></div><br>
+                                    <div class="input-group input-group-sm mb-3">
+
+                                        <input type="email" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" required>
+                                    </div>
+
+                                    <div class="title float-left">Password <strong style="color: red;">*</strong></div>
+                                    <br>
+                                    <div class="input-group input-group-sm mb-3">
+
+                                        <input name="passward" type="password" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                            required>
+                                        <div class="input-group-append">
+                                            <button onclick="showpassward()" class="btn btn-outline-secondary"
+                                                type="button" id="button-addon2"><i class="fa fa-eye"
+                                                    id="font"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit">
+                                        <input class="btn createaccount" type="submit" value="SIGN IN"><br><br>
+                                        <a href="#" class="btn">FORFOT PASSWORD</a>
+                                        <br><br>
+
+                                    </div>
+                                    <div class="title">or login with...</div><br>
+                                    <div class="socialmedia">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2601.png"
+                                                        alt="facebook"></a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2602.png"
+                                                        alt="twitter"></a>
+
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2603.png"
+                                                        alt="google"></a>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- card two -->
+                            <!-- this is for creating new account -->
+                            <div class="tab-pane fade" id="nav-newaccount" role="tabpanel"
+                                aria-labelledby="nav-newaccount-tab">
+                                <br>
+
+                                <form action="">
+                                    <div class="title float-left">Usename <strong style="color: red;">*</strong></div>
+                                    <br>
+                                    <div class="input-group input-group-sm mb-3">
+
+                                        <input type="text" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" required>
+                                    </div>
+
+                                    <div class="title float-left">Email <strong style="color: red;">*</strong></div><br>
+                                    <div class="input-group input-group-sm mb-3">
+
+                                        <input type="email" class="form-control" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" required>
+                                    </div>
+
+                                    <div class="title float-left">Password <strong style="color: red;">*</strong></div>
+                                    <br>
+                                    <div class="input-group input-group-sm mb-3">
+
+                                        <input name="password" type="password" class="form-control"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm"
+                                            required>
+                                        <div class="input-group-append">
+                                            <button onclick="togglePW()" class="btn btn-outline-secondary"
+                                                type="button" id="button-addon2"><i class="fa fa-eye"
+                                                    id="font"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit1">
+                                        <input class="btn createaccount" type="submit" value="CREATE ACCOUNT">
+                                        <br><br>
+
+                                    </div>
+                                    <div class="title">or login with...</div><br>
+                                    <div class="socialmedia">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2601.png"
+                                                        alt="facebook"></a>
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2602.png"
+                                                        alt="twitter"></a>
+
+                                            </div>
+                                            <div class="col">
+                                                <a href="#"><img height="30px" width="90px" src="img/Group 2603.png"
+                                                        alt="google"></a>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        // this is javascript foe adding behavior to our webpage
+
+        function showpassward() { //this function is declared in card one password input
+
+            let password = document.querySelector('[name=passward]');//this for selecting type of password input
+
+            if (password.getAttribute('type') === 'password') {
+                password.setAttribute('type', 'text');// this is for changing type password to text
+
+            } else {
+                password.setAttribute('type', 'password');
+
+            }
+        }
+
+
+        function togglePW() {//this function is declared in card two password input
+
+            let password1 = document.querySelector('[name=password]');//this for selecting type of password input
+
+            if (password1.getAttribute('type') === 'password') {
+                password1.setAttribute('type', 'text');// this is for changing type password to text
+
+            } else {
+                password1.setAttribute('type', 'password');
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

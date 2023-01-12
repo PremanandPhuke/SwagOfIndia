@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+
+    <!-- flavicon link -->
+    <link rel="icon" type="image/png" href="img/flavicon.png">
+
+    <!-- CSS file links -->
+    <link rel="stylesheet" href="Style_cart.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="top" name="top" class="orangeDiv" align='center'>
+
+
+        <!-- First Navigation  Bar Starts -->
+
+        <div class="container">
+            <div class="row">
+
+                <!-- this row has social media logos, search bar for latest products and brands, contact number, app link and language setting -->
+                <div class="col" style="width: 10px;"> <a href="#"> <img style="height: 35px;"
+                            src="img/facebook round.png" alt="facebook">
+                        <a href="#"> <img style="height: 35px;" src="img/youtube.png" alt="Youtube"> </a>
+                        <a href="#"> <img style="height: 35px;" src="img/twitter round.png" alt="Twitter">
+                        </a>
+                    </a></div>
+
+                <div class="col"> <input class="btn" type="text" name="search" id="search"
+                        placeholder="  Search Products & Brands" size="40"
+                        style="border: 0px;height: 30px;border-radius: 25px;">
+                    <a href="#"> <img style="margin-left: 90%; margin-top: -15%;" src="img/Path 12337.png"
+                            alt="search"></a></div>
+
+                <div class="col">
+                    <a href="#"><img style="height: 30px;" src="img/Path 12336.png" alt="contactus"></a><a
+                        id="contactno" href="#" style="color: white;">+919838203708</a>
+                </div>
+                <div class="col"><a href="#" style="color: white;">Sell On <br> Company</a></div>
+                <div class="col"><a href="#" style="color: white;">Download <br> App</a></div>
+
+                <div class="col">
+                    <img id="pr" style="height: 25px; width: 25px;" src="img/india.png" alt="Country">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false"
+                            style="background-color: orangered; border: hidden; color: white; text-decoration: none;">
+                            Country
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a onclick="btn()" class="dropdown-item" href="#">India</a>
+                            <a onclick="btn1()" class="dropdown-item" href="#">USA</a>
+                            <a onclick="btn2()" class="dropdown-item" href="#">UAE</a>
+                            <a onclick="btn3()" class="dropdown-item" href="#">CANADA</a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- First Navigation  Bar ended -->
+
+
+    </div>
+    <br>
+    <div class="pages" id="pages" style="background-color: white;">
+        <!-- Second Navigation  Bar Starts -->
+
+        <div class="container">
+            <!-- In this row we have logo of our website, different categories and sign in option for users -->
+            <br>
+            <div class="row">
+                <div class="col"><img src="img/logo.png" style="margin-top: -20px;">
+                </div>
+                <div class="col"><a href="#">Home</a></div>
+                <div class="col">
+                    <div onclick="btn4()" class="dropdown1" style="margin-top: -5px;">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-expanded="false"
+                            style=" border: hidden; background-color: white; ">
+                            Categories
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Menu One</a>
+                            <a class="dropdown-item" href="#">Menu Two</a>
+                            <a class="dropdown-item" href="#">Menu Three</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"><a href="#">Latest</a></div>
+                <div class="col"><a href="#">Blog</a></div>
+                <div class="col"><a href="#">Pages</a></div>
+                <div class="col"><a href="#">Contact</a></div>
+                <div class="col"> <a href="Sign in.html"><button class="btn">
+                            <strong style="color: white;">SIGN IN</strong>
+                        </button></a></div>
+
+            </div>
+        </div>
+        <!-- Second Navigation  Bar ended -->
+
+    </div>
+
+    <br>
+
+
+
+    <main>
+        <!-- bread crumb   -->
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="row">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="#">Appliances</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"><a href="#">Fans</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- container for spacing -->
+        <div class="container">
+            <!-- table of row and & column -->
+            <!-- column 1 containing card product details -->
+            <!-- column 2 containing bill -->
+            <!-- table breaks at xxl screen size -->
+            <div class="row">
+                <div class="col-12 col-xxl-9">
+                    <!-- table of row and & column -->
+                    <!-- column 1 with cart heading and total item no. -->
+                    <!-- column 2 with total price -->
+                    <div class="row">
+                        <div class="col-7">
+                            <!-- class of cartLength is edited by JS -->
+                            <strong>
+                                <p class="fs-5 type2 ">MY CARTS</p>&emsp; (<p class="cartLength d-inline"> 0
+                                </p>ITEMS)
+                            </strong>
+                        </div>
+                        <div class="col-5 text-end">
+                            <!-- class of totalCost is edited by JS -->
+                            <strong class="fs-6">Total : Rs <p class="totalCost d-inline">0</p> </strong>
+                        </div>
+                    </div>
+                    <!-- div with cards of product -->
+                    <!-- produts and maped through JS in div -->
+                    <div id="cartProduct">
+                        <!-- content in case of no item -->
+                        <div class="container text-center mt-5">
+                            <p class="fs-4 type1">NO ITEM</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- div containing bill -->
+                <div class="col-12 col-xxl-3">
+                    <div id="bill" class="card">
+                        <!-- container for spacing -->
+                        <!-- div containing heading and apply coupon button -->
+                        <div class="container mt-3 mb-2">
+                            <strong class="fs-4">COUPONS</strong><br>
+                            <strong><img src="img/coupon.png" alt="coupon"> Apply Coupons</strong>
+                            <button class="applyBtn">Apply</button>
+                        </div>
+                        <!-- line break -->
+                        <hr>
+                        <!-- container for spacing -->
+                        <div class="container">
+                            <strong>PRICE DETAILS</strong><br>
+                            <!-- total gross price of all products -->
+                            <div class="row">
+                                <p class="col">Price Details</p>
+                                <div class="col" align="right">
+                                    <p class="grossPrice float-end">0</p>
+                                    <p class="float-end ">Rs &nbsp;</p><br>
+                                </div>
+                            </div>
+                            <!-- total discounted ammount -->
+                            <div class="row">
+                                <p class="col">Bag Discount</p>
+                                <div class="col" align="right">
+                                    <p class="float-end type3 totalDiscount">0</p>
+                                    <p class="float-end type3">Rs &nbsp;</p><br>
+                                </div>
+                            </div>
+                            <!-- coupon discount -->
+                            <div class="row">
+                                <p class="col">Coupon Discount</p>
+                            <p class="float-end type2 col" align="right">Apply Coupon</p><br>
+                            </div>
+                            <!-- Subtotal Amount -->
+                           <div class="row">
+                            <p class="col">Order Total</p>
+                           <div class="col" align="right">
+                            <p class="totalCost float-end">0</p>
+                            <p class="float-end">Rs &nbsp;</p><br>
+                           </div>
+                           </div>
+                            <!-- delivary charge (free) -->
+                          <div class="row">
+                            <p class="col">Delivery Charges</p>
+                            <div class="col" align="right">
+                                <p class="type3 float-end">&nbsp; Free</p>
+                            <p class="float-end text-decoration-line-through">Rs 99</p>
+                            </div>
+                          </div>
+                            <!-- line break -->
+                            <hr>
+                            <!-- total amount to be paid -->
+                            <strong>Total</strong><strong class="float-end">Rs <p class="totalCost">0</p></strong><br>
+                            <!-- div with rectangle button class and rol of button -->
+                            <a href="#" class="placeorder" role="button">
+                                <div class="py-1 my-3 rectbtn1 text-center">
+                                    <strong>PLACE ORDER</strong>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <br><br><br><br><br>
+
+    <div class="payment" id="payment">
+
+        <!-- Here cards of payments options with details started -->
+        <!-- Here we use cards to display different options for users -->
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 34.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/100_ Secure payments.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 35.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Trustpay.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 37.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Shop on the go.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card" style="width: 15rem;">
+                        <img style="margin-left: 25%;" height="100" width="120" src="img/Image 36.png" alt="Image34">
+                        <div class="card-body">
+                            <img width="200" height="20" src="img/Help center.png" alt="secure payment"><br>
+                            <img height="40" width="220" style="margin-left: -5%;"
+                                src="img/turpis eleifend vitae malesuada magna congue. Damus id ullamcorper neque.-3@2x.png"
+                                alt="lines">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br>
+        </div>
+        <!-- Here cards of payments options with details ended -->
+
+
+    </div>
+
+
+    <div class="moreinfo">
+        <!-- Here privacy policy options started -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="img/POLICY INFOPrivacy PolicyTerms of SaleTerms of UseReport Abuse _ Takedown Policy.png"
+                        alt="policy info">
+                </div>
+                <div class="col">
+                    <img src="img/COMPANYAbout UsCore ValuesCareersBlogSitemap.png" alt="company">
+
+                </div>
+                <div class="col">
+                    <img src="img/SNAPDEAL BUSINESSShopping AppSell on SnapdealAdvertise on SnapdealMedia EnquiriesBe an Affiliate.png"
+                        alt="SnapdealAdvertise">
+                </div>
+                <div class="col">
+                    <img src="img/NEED HELP FAQContact UsOnline Shopping.png" alt="need help">
+                </div>
+                <div class="col">
+                    <img src="img/SUBSCRIBE.png" alt="SUBSCRIBE"><br><br>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="  Your Email Address"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                                style="background-color: black; color: white;">Subscribe</button>
+                        </div>
+                    </div>
+                    <img src="img/Register now to get updates on promotions          and coupons. Or Download App.png"
+                        alt="Register">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col ">
+                    <hr>
+                    <a class="scrollUp" id="scrollUp"> <img align="right" src="img/Group 2600.png" alt="at top"></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- Here privacy policy options ended -->
+
+
+    </div>
+
+
+    <div class="paymentandconnect">
+        <!-- Here payment and connect methods started -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="row">
+                        <img height="30" width="120" src="img/payment.png" alt="payment2">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="img/Image 38.png" alt="image38">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 39.png" alt="image39">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 40.png" alt="image40">
+
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 42.png" alt="image42">
+
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 43.png" alt="image43">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col ">
+                    <div class="row">
+                        <img height="30" width="120" style="margin-left: -5%;" src="img/CONNECT.png" alt="CONNECT">
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="img/Image 44.png" alt="image44">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 45.png" alt="image45">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 46.png" alt="image46">
+                        </div>
+                        <div class="col-sm">
+                            <img src="img/Image 47.png" alt="image47">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Here payment and connect methods ended -->
+
+    </div>
+    <br><br><br>
+    <!-- bootstrap JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/Javascript.js"></script>
+    <script src="js/Jquery.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</body>
+
+</html>

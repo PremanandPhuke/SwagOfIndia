@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+.container {
+    padding-top: 10px;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+body {
+    font-family: 'Rosario';
+}
+
+.orangeDiv {
+    background-color: orangered;
+    width: 100%;
+    margin-top: -0px;
+    text-align: center;
+
+
+}
+
+.centerTable {
+    margin: 0px auto;
+}
+
+h1 {
+    padding-left: 100px;
+}
+
+.boxed {
+    border: 0.5px solid rgb(220, 217, 217);
+}
+
+/* this styling for sticky navigation bar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+
+}
+
+
+/* this is button styles  on second navigation bar */
+
+.pages button {
+    height: 50px;
+    width: 130px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0px 0px 12px #666666;
+    -moz-box-shadow: 0px 0px 12px #666666;
+    box-shadow: 0px 0px 12px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: orangered;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+
+}
+
+.pages button:hover {
+    text-decoration: none;
+    background-color: orange;
+}
+
+.pages a {
+    color: black;
+    size: 40px;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.pages a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+.dropdown1 {
+    text-decoration: none;
+}
+
+.dropdown1:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+
+/* breadcrumb styleing */
+
+
+.breadcrumb a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+    color: orangered;
+}
+
+.breadcrumb {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+
+/* FAQ section */
+
+.FAQ .tab-content .question{
+    cursor: pointer;
+}
+
+.FAQ .sidethings .changingbuttons a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.FAQ .sidethings .changingbuttons a:hover{
+    color: orangered;
+}
+
+.FAQ .sidethings .otherlinks a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.FAQ .sidethings .otherlinks a:hover{
+    color: orangered;
+}
+
+.FAQ .sidethings h4{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.FAQ .tab-content h2{
+    color: orangered;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* to top button */
+
+.moreinfo .scrollUp img {
+    cursor: pointer;
+}

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Merriweather:wght@900&family=Readex+Pro:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Fuzzy+Bubbles&family=Merriweather:wght@900&family=Readex+Pro:wght@300&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lora&family=Merriweather:wght@900&family=Readex+Pro:wght@300&family=Roboto&display=swap');
+
+
+
+/* first navigation bar */
+.orangeDiv {
+  background-color: orangered;
+
+  width: 100%;
+  margin-top: -0px;
+  text-align: center;
+
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.container {
+  padding-top: 10px;
+}
+
+
+/* this is button styles  on second navigation bar */
+
+/* this is for making navigation bar sticky */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+
+}
+
+.pages button {
+  height: 50px;
+  width: 130px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 12px #666666;
+  -moz-box-shadow: 0px 0px 12px #666666;
+  box-shadow: 0px 0px 12px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: orangered;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+
+}
+
+.pages button:hover {
+  text-decoration: none;
+  background-color: orange;
+}
+
+
+.pages a {
+  color: black;
+  size: 40px;
+  text-decoration: none;
+  font-size: 16px;
+
+}
+
+.pages a:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+.dropdown1 {
+  text-decoration: none;
+}
+
+.dropdown1:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+/* registeration area styling */
+.register {
+  background-color: orangered;
+}
+
+.register .Untitled img {
+  padding-top: 5%;
+
+}
+
+.register .Untitled h4 {
+  padding-top: 25%;
+  font-family: 'Merriweather', serif;
+
+  color: white;
+  font-size: 250%;
+}
+
+.register .Untitled1 img {
+
+  border-radius: 50%;
+
+}
+
+.register .Untitled1 h {
+  color: white;
+}
+
+.register .card .maintitle {
+
+  background-color: rgb(22, 2, 2);
+  text-align: center;
+  color: white;
+  height: 50px;
+}
+
+.register .card .maintitle h5 {
+
+  padding-top: 2.5%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.register .card select {
+  margin-top: -1%;
+  text-align: center;
+
+}
+
+.register .card .submit .btn {
+  background-color: orangered;
+  color: white;
+  width: 100%;
+
+}
+
+.register .card .submit .btn:hover {
+  background-color: orange;
+}
+
+.register .Untitled2 h {
+  color: white;
+  font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
+.register .Untitled2 .callus a {
+  width: 100%;
+  background-color: rgb(22, 2, 2);
+  color: white;
+  text-decoration: none;
+}
+
+.register .Untitled2 .callus a:hover {
+  text-decoration: none;
+  background-color: rgb(90, 3, 3);
+}
+
+/* succeed with dummy text area starts */
+
+
+.succeedtext .Untitled3 h2 {
+  font-family: 'Lora', serif;
+
+  color: black;
+
+}
+
+.succeedtext .Untitled4 h {
+  color: black;
+}
+
+
+/* this if for scrolltotop button */
+.scrollUp {
+
+  cursor: pointer;
+}
